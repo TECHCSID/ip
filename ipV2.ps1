@@ -25,9 +25,8 @@
 
 # Create output object
     $OutputObject = New-Object System.Object
-    $OutputObject | Add-Member -type NoteProperty -name PublicIP -value $IPAddress
-    $OutputObject | Add-Member -type NoteProperty -name RemoteHost -value $RemoteHost
-    $OutputObject | Add-Member -type NoteProperty -name InternalIP -value $InternalIPAddress
+    $OutputObject | Add-Member -type NoteProperty -name Public IP -value $IPAddress
+    $OutputObject | Add-Member -type NoteProperty -name Private IP -value $InternalIPAddress
     $OutputObject | Add-Member -type NoteProperty -name  -value $HostName
     $OutputObject | Add-Member -type NoteProperty -name  -value $Domain
     $OutputObject | Add-Member -type NoteProperty -name Gateway -value $DefaultGateway
