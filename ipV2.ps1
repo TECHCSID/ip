@@ -25,16 +25,15 @@
 
 # Create output object
     $OutputObject = New-Object System.Object
-    $OutputObject | Add-Member -type NoteProperty -name PublicIPAddress -value $IPAddress
+    $OutputObject | Add-Member -type NoteProperty -name PublicIP -value $IPAddress
     $OutputObject | Add-Member -type NoteProperty -name RemoteHost -value $RemoteHost
-    $OutputObject | Add-Member -type NoteProperty -name InternalIPAddress -value $InternalIPAddress
-    $OutputObject | Add-Member -type NoteProperty -name HostName -value $HostName
-    $OutputObject | Add-Member -type NoteProperty -name Domain -value $Domain
-    $OutputObject | Add-Member -type NoteProperty -name DefaultGateway -value $DefaultGateway
-    $OutputObject | Add-Member -type NoteProperty -name DHCPENabled -value $DHCPENabled
-    $OutputObject | Add-Member -type NoteProperty -name DHCPServer -value $DHCPServer
-    $OutputObject | Add-Member -type NoteProperty -name DNSServer -value $DNSServer
-    $OutputObject | Add-Member -type NoteProperty -name MACAddress -value $MACAddress
+    $OutputObject | Add-Member -type NoteProperty -name InternalIP -value $InternalIPAddress
+    $OutputObject | Add-Member -type NoteProperty -name  -value $HostName
+    $OutputObject | Add-Member -type NoteProperty -name  -value $Domain
+    $OutputObject | Add-Member -type NoteProperty -name Gateway -value $DefaultGateway
+    $OutputObject | Add-Member -type NoteProperty -name DHCP -value $DHCPENabled -value $DHCPServer
+    $OutputObject | Add-Member -type NoteProperty -name DNS -value $DNSServer
+    $OutputObject | Add-Member -type NoteProperty -name MAC -value $MACAddress
 
 # Output the output object
     $OutputObject
